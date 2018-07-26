@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 Video and Audio JS Controller</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <!--image for icon-->
+
+      <link rel="icon" href="images/bg2.jpeg">
+  </head>
+
+
+  <!--Image for body background-->
+    <body background="images/bg1.jpeg">
+
+    <!-- div for video controller-->
+    <div class="main">
+      <h1>@                ~~~~~~~~~~VIDEO CONTROLLER ~~~~~~~~~      @</h1>
+    <video id="vid" src="video/india.mp4" autoplay controls muted loop width="800px" height="800px"></video>
+    <div class="">
+
+
+    	  <!--buttons for play and pause-->
+
+
+    	 <button type="button" name="button" onclick="play()">Play</button>
+         <button type="button" name="button" onclick="pause()">Pause</button>
+       </div>
+    </div>
+
+
+    <!--div for audio controller-->
+    <div class="main">
+
+      <h1>@~~~~~~AUDIO CONTROLLER~~~~~~@</h1>
+    <audio id="aud" src="audio/speech2.mp3" autoplay controls muted loop width="800" height="800px"></audio>
+    
+    <div class="">
+
+    	<!--buttons for play and pause-->
+
+     <button type="button" name="button" onclick="play1()">Play</button>
+     <button type="button" name="button" onclick="pause1()">Pause</button>
+       </div>
+    </div>
+  </body>
+
+  <!--javascript functions-->
+
+  <script type="text/javascript">
+    
+  function pause() 
+ 
+  {
+
+   var video=document.getElementById("video");
+    video.pause();
+  }
+
+  function play() 
+  {
+    var video1=document.getElementById("video");
+    video1.play();
+  }
+
+
+  function pause1() 
+  {
+    var audio=document.getElementById("audio");
+    audio.pause();
+  }
+
+
+  function play1() 
+  {
+    var audio1=document.getElementById("audio");
+    audio1.play();
+  }
+
+  </script>
+</html>
